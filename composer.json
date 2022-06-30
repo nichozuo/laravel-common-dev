@@ -1,0 +1,31 @@
+{
+    "name": "nichozuo\/laravel-common-dev",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nichozuo",
+            "email": "nichozuo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "laravel/framework": "^9.15",
+        "doctrine/dbal": "^3.3",
+        "jan-swiecki/simple-annotations": "^0.3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nichozuo\\LaravelCommonDev\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nichozuo\\LaravelCommonDev\\ServiceProvider"
+            ]
+        }
+    }
+}
